@@ -531,10 +531,10 @@ a{
   }
   #back_link{
     transform: none;
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   #footer_info{
-    margin-left: 1rem;
+    margin-left: 2rem;
   }
 }
 
