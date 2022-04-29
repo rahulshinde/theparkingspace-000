@@ -9,6 +9,15 @@
   #map_location:hover:after{
     border-color: var(--primary);
   }
+  #back_link:hover{
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 1rem;
+  }
+
+  #back_link:hover #back_arrow path{
+    fill: var(--secondary);
+  }
 }
 
 @font-face {
@@ -87,6 +96,42 @@ footer{
 .spacer{
   margin-left: 1rem;
   margin-right: 1rem;
+}
+
+#back_link{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--m_font);
+  padding: 0.5rem;
+  padding-top: 0;
+  justify-content: space-evenly;
+  width: 8.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5.25rem;
+  font-family: 'Roundaway Gothic';
+  text-decoration: none;
+  border-bottom: 2px solid var(--primary);
+}
+
+#back_arrow{
+  width: 80%;
+}
+
+#back_arrow path{
+  fill: var(--primary);
+}
+
+#back_link:focus-visible{
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 1rem;
+  }
+
+#back_link:focus-visible path{
+  fill: var(--secondary);
 }
 
 #footer_info{
@@ -445,7 +490,7 @@ a{
   }
 
   header{
-    margin-bottom: -2rem;
+    margin-bottom: -5rem;
   }
 
   footer{
@@ -464,13 +509,18 @@ a{
   }
 
   #footer_info,
-  #map_location{
+  #map_location,
+  #back_link{
    position: relative;
     bottom: auto;
     left: auto;
     right: auto;
     text-align: center;
     margin: 3rem auto 0 auto;
+  }
+  #back_link{
+    margin-top: 5rem;
+    display: block;
   }
 }
 
@@ -530,6 +580,11 @@ a{
 
   #footer_info{
     width: 18rem;
+    max-width: 100%;
+  }
+
+  #back_link{
+    width: 11rem;
     max-width: 100%;
   }
 
