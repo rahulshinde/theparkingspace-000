@@ -115,6 +115,9 @@ footer{
   text-decoration: none;
   border-bottom: 2px solid var(--primary);
 }
+.artist_name{
+  font-family: 'Roundaway Gothic';
+}
 
 #back_arrow{
   width: 50%;
@@ -407,7 +410,7 @@ a{
   align-items: center;
   font-size: var(--s_font);
   margin-top: -1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   justify-content: center;
 }
 
@@ -449,6 +452,13 @@ a{
 .half{
   margin:  0 2rem 2rem 2rem;
   width:  calc(50% - 4rem);
+}
+
+.content_with_image{
+  display: flex;
+  width: 80%;
+  margin-left: 3%;
+  margin-bottom: 3rem;
 }
 
 @media (max-width: 1850px){
@@ -583,6 +593,7 @@ a{
   }
 
   #map_location{
+    margin-top: 2rem;
     display: inline-block;
     width: auto;
     max-width: 80%;
@@ -593,8 +604,7 @@ a{
   }
 
   #footer_info{
-    width: 18rem;
-    max-width: 100%;
+    width: 100%;
     margin-left: 0;
   }
 
@@ -611,6 +621,18 @@ a{
     width: auto;
     z-index: 4;
     margin-top: 9rem;
+  }
+
+  .content_with_image{
+    width: 100%;
+    margin-left: 0;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .author_image{
+    margin-right: 0;
   }
 
   footer{
