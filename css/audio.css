@@ -94,10 +94,15 @@
   box-sizing: border-box;
   font-family: 'Roundaway Stencil';
   color: var(--primary);
+  border-radius: 0;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
   border-right: 3px solid var(--primary);
   border-bottom: 3px solid var(--primary);
   font-size: var(--l_font);
   flex-grow: 1;
+  outline: none;
 }
 
 #track_select button.text{
