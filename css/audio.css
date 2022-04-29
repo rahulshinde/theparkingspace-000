@@ -180,8 +180,8 @@
   .green-audio-player svg,
   .green-audio-player img {
     display: block;
-    max-width: 2rem;
-    max-height: 2rem; }
+    width: 2rem;
+    height: 2rem;}
   .green-audio-player .holder {
     position: relative; }
     .green-audio-player .holder .loading .loading__spinner {
