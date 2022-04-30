@@ -9,6 +9,11 @@ function setup(){
   document.querySelectorAll('.audio_button').forEach((e)=>{
   	e.addEventListener('click', openAudioPlayer);
   })
+
+  setTimeout(function(){
+    document.body.classList.add('loaded');
+  }, 800)
+
 }
 
 function openAudioPlayer(e){

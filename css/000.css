@@ -16,6 +16,18 @@ body.section_4 .survey:after{
   display: block; 
 }
 
+#illustration1{
+  width: 10%;
+  top: 50%;
+  right: 2%;
+}
+
+#illustration2{
+  right: 15%;
+  bottom: 50%;
+  width: 10%;
+}
+
 
 #listen{
 	text-align: center;
@@ -39,4 +51,29 @@ body.section_4 .survey:after{
 #print_download img{
   height: 5rem;
   margin-bottom:  1rem;
+}
+
+@media (max-width: 1000px), (hover: none){
+  #illustration1{
+    width: 30%;
+    top: auto;
+    bottom: 1rem;
+    right: auto;
+    left: 2rem;
+  }
+
+  #illustration2{
+    top: auto;
+    right: 2rem;
+    bottom: 2rem;
+    width: 30%;
+  }
+}
+
+@media (max-width: 767px), (hover: none) and (max-width: 767px){
+
+
+  #illustration1{
+    bottom: -4rem;
+  }
 }
