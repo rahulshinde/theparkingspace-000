@@ -6,10 +6,13 @@
 body.section_1 .listen:after{
   display: block; 
 }
-body.section_2 .image:after{
+body.section_2 .access:after{
   display: block; 
 }
-body.section_3 .survey:after{
+body.section_3 .about:after{
+  display: block; 
+}
+body.section_4 .survey:after{
   display: block; 
 }
 

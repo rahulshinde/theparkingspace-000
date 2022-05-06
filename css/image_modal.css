@@ -13,6 +13,10 @@
     filter: invert(1);
   }
 
+  .author_image button:hover svg{
+    fill: var(--primary);
+  }
+
   button.close_modal:hover{
     border-color: var(--secondary);
   }  
@@ -25,6 +29,21 @@
 .image_link{
   box-sizing: border-box;
   margin-bottom: var(--outer_margin);
+}
+.author_image{
+  width: 8rem;
+  margin-right: 2rem;
+  display: block;
+}
+
+.image_link.author_image button{
+  padding-bottom: 0.5rem;
+}
+
+.author_image svg{
+  width: 2rem;
+  padding: 0 2rem;
+  fill: var(--secondary);
 }
 .image_link button{
   position: relative;
@@ -158,9 +177,6 @@ button.close_modal:after{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-body{
-  background-color: white;
 }
 
 
