@@ -214,6 +214,7 @@ button.close_modal:after{
 
   .description{
     max-width: 100%;
+    font-size: var(--m_font);
   }
 }
 
@@ -239,5 +240,6 @@ button.close_modal:after{
 
   .description{
     max-width: 100%;
+    font-size: var(--m_font);
   }
 }
