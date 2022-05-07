@@ -74,12 +74,10 @@
 #track_select{
   display: flex;
   width: auto;
-  border-top: 3px solid var(--primary);
-  border-left: 3px solid var(--primary);
   margin-bottom: 2rem;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 #track_select button.selected,
@@ -91,19 +89,51 @@
 #track_select button{
   cursor: pointer;
   padding:  0.5rem;
+  width: calc(20% - 1rem);
+  margin: 0.5rem 0.5rem 1rem 0.5rem;
   box-sizing: border-box;
   font-family: 'Roundaway Stencil';
   color: var(--primary);
   border-radius: 0;
   border: none;
-  margin: 0;
   appearance: none;
   -webkit-appearance: none;
-  border-right: 3px solid var(--primary);
-  border-bottom: 3px solid var(--primary);
   font-size: var(--l_font);
   flex-grow: 1;
   outline: none;
+  border-radius: 1rem;
+  position: relative;
+}
+
+#track_select button:after{
+  content: '';
+  position: absolute;
+  width: calc(100% + 1rem);
+  height: calc(100% + 1rem);
+  top: -0.5rem;
+  left: -0.5rem;
+  border-left: 3px solid var(--primary);
+  box-sizing: border-box;
+}
+
+#track_select button:nth-child(5):after,
+#track_select button:nth-child(10):after{
+  border-right: 3px solid var(--primary);
+}
+
+#track_select button:nth-child(0):before,
+#track_select button:nth-child(1):before,
+#track_select button:nth-child(2):before,
+#track_select button:nth-child(3):before,
+#track_select button:nth-child(4):before,
+#track_select button:nth-child(5):before{
+  position: absolute;
+  content: '';
+  left: 0;
+  width: 100%;
+  height: calc(100% + 0.25rem);
+  border-bottom: 3px solid var(--primary);
+
 }
 
 #track_select button.text{
@@ -139,7 +169,7 @@
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px), (hover: none) and (max-width: 767px){
   .play_pause_container img{
     width: 1.5rem;
     height: 1.5rem;
@@ -148,6 +178,35 @@
     height: 1.5rem;
     width: calc(100% - 2rem);
   }
+
+  #track_select button{
+    width: calc(50% - 1rem);
+  }
+
+  #track_select button:before{
+    position: absolute;
+    content: '';
+    left: 0;
+    width: 100%;
+    height: calc(100% + 0.25rem);
+    border-bottom: 3px solid var(--primary);
+  }
+
+  #track_select button:nth-child(odd):after{
+    border-right: none;
+  }
+
+  #track_select button:nth-child(even):after{
+    border-right: 3px solid var(--primary);
+  }
+
+  #track_select button:nth-child(9):before{
+    display: none;
+  }
+  #track_select button:nth-child(10):before{
+    display: none;
+  }
+
 }
 
 .player.hidden{
